@@ -1,4 +1,3 @@
-````markdown
 # Sine Wave Generation using STM32H755 Nucleo (DAC - M7 Core)
 
 ## Overview
@@ -60,7 +59,7 @@ while (1)
     HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_8B_R, lookup[pos]);
     pos++;
 }
-````
+```
 
 ---
 
@@ -77,7 +76,6 @@ while (1)
 * No delay → very high frequency output
 * Frequency depends on loop execution speed
 * For controlled frequency:
-
   * Use Timer (TIM6/TIM7)
   * Use DMA (recommended)
 
@@ -94,6 +92,3 @@ while (1)
 ## Conclusion
 
 This project demonstrates basic sine wave generation using DAC and lookup table method on STM32H755 (M7 core).
-
-```
-```
